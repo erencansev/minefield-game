@@ -1,6 +1,5 @@
-### 💣 Minefield-game
 
-This project is an example of a text-based implementation of a classic minefield game in Java.
+![minefield-game-md](https://github.com/erencansev/minefield-game/assets/109366452/aa600dfb-d358-4d57-8efc-b37287199e80)
 
 ---
 
@@ -60,3 +59,8 @@ Steps to run this project on your local machine:
    java Main.java
    ```
  ---
+### Contact information
+
+If you have questions, feedback or contributions regarding my project, you can reach me by email:
+
+- **Communication:** [E-mail](mailto:mee.cansev@gmail.com)
