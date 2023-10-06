@@ -1,11 +1,11 @@
 
-![minefield-game-md](https://github.com/erencansev/minefield-game/assets/109366452/aa600dfb-d358-4d57-8efc-b37287199e80)
+![readme-image](https://github.com/erencansev/minefield-game/assets/109366452/7df70b66-5e33-42f8-810a-f21796497225)
 
 ---
 
 ### 📍 Minefield game flowchart
 
-![Screenshot at Sep 30 22-43-02](https://github.com/erencansev/minefield-game/assets/109366452/a6b0db84-d3fe-4bc0-aee3-ff67b1f237bb)
+![readme-flowchart](https://github.com/erencansev/minefield-game/assets/109366452/dfe6ae04-1f71-484a-8d6a-2339e1639ac8)
 
 ---
 
@@ -33,7 +33,7 @@ Players try to find mines in a specific playing area. As players click on cells,
 
 In this Minesweeper game, row and column indexes start from 0. That is, the first line on the game board is marked "0", the second line is marked "1", and so on. Likewise, the first column is marked "0", the second column is marked "1", and so on.
 
-![row-columns](https://github.com/erencansev/minefield-game/assets/109366452/0b210091-3c67-4936-bed5-bc8b8189fe9e)
+![readme-info](https://github.com/erencansev/minefield-game/assets/109366452/873d53b2-6022-49d4-9d96-26df7e5a45b2)
 
 ---
 
