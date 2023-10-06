@@ -11,7 +11,7 @@ public class MineSweeper {
     int sutunNo;
     boolean win;
     boolean durum;
-    MineSweeper(int adetSatir, int adetSutun) { // -5- The project was designed within the MineSweeper class
+    MineSweeper(int adetSatir, int adetSutun) { 
         this.adetSatir = adetSatir;
         this.adetSutun = adetSutun;
         this.mineMap = new String[adetSatir][adetSutun];
@@ -40,11 +40,11 @@ public class MineSweeper {
         }
         return true;
     }
-    public void run() { // -6- Relevant methods in the classroom was done
+    public void run() { 
         for (int j = 0; j < this.adetSatir; j++) {
             for (int k = 0; k < this.adetSutun; k++) {
                 if (sayac < (this.adetSutun * this.adetSatir / 4)) {
-                    randomSayi();  // -8- Appropriate number of random mines placed in the array
+                    randomSayi(); 
                     sayac++;
                     if (isFind(this.board, "B")) {
                         this.mineMap[satirNo][sutunNo] = "B";
@@ -67,13 +67,13 @@ public class MineSweeper {
             boolean kontrol = true;
             int satir = 0;
             int sutun = 0;
-            while (kontrol) {// -9- The row and column information that the user wanted to mark was received.
+            while (kontrol) {
 
                 System.out.print("Açmak istediğiniz satırı giriniz : ");
                 satir = tara.nextInt();
                 System.out.print("Açmak istediğiniz sütunu giriniz : ");
-                sutun = tara.nextInt();  // -10- It is checked whether the point selected by the user is within the boundaries of the array,
-                //If not, a warning message is given and you are asked to log in again.
+                sutun = tara.nextInt();  
+                
                 if ((satir < 0 || satir > (this.adetSatir - 1)) || (sutun < 0 || sutun > (this.adetSutun - 1))) {
                     System.out.println("Hatalı sayı girdiniz lütfen tekrar giriniz ");
                     kontrol = true;
@@ -86,13 +86,13 @@ public class MineSweeper {
             }
             System.out.println("====================================");
 
-            if (this.mineMap[satir][sutun].equals("B")) { // -13- Control was made so that if the user steps on a mine they will lose the game.
-                System.out.println("Oyunu kaybettiniz ! "); // -15- Appropriate messages are displayed to the user if the user loses or wins the game.
+            if (this.mineMap[satir][sutun].equals("B")) { 
+                System.out.println("Oyunu kaybettiniz ! "); 
                 System.out.println("====================================");
                 this.durum = false;
                 break;
             }
-            for (int i = -1; i < 2; i++) { // -11- The playing field updates every time the user makes a move.
+            for (int i = -1; i < 2; i++) {
                 for (int j = -1; j < 2; j++) {
                     if ((satir + i >= 0 && (satir + i) <= (this.adetSatir - 1)) && (sutun + j >= 0 && (sutun + j) <= (this.adetSutun - 1))) {
                         if (this.mineMap[satir + i][sutun + j].equals("B")) {
@@ -100,16 +100,16 @@ public class MineSweeper {
                             this.board[satir][sutun] = String.valueOf(sayac);
                         }
                         if (sayac == 0) {
-                            this.board[satir][sutun] = "0"; // -12- If there are no mines at the entered point, the number of mines around it or the value 0 is written instead.
+                            this.board[satir][sutun] = "0"; 
                         }
                     }
                 }
             }
             if (this.durumSayac == this.adetSatir * this.adetSutun - (this.adetSutun * this.adetSatir / 4)) {
-                this.win = true;// -14- If all points are selected without mines, the game is checked to win.
+                this.win = true;
             }
             if (this.win == true) {
-                this.durum = false;// -15- Appropriate messages are displayed to the user if the user loses or wins the game.
+                this.durum = false;
                 System.out.println("Tebrikler Oyunu Kazandınız !");
             } else durum = true;
             printBoard();
@@ -137,7 +137,7 @@ public class MineSweeper {
         }
         System.out.println("====================================");
     }
-    public void MineCheck(int satirNo, int sutunNo) { // -7- matrix size determined by user.
+    public void MineCheck(int satirNo, int sutunNo) { 
         this.adetSatir = satirNo;
         this.adetSutun = sutunNo;
     }
